@@ -1,0 +1,13 @@
+parameters:
+    level: 9
+
+    paths:
+        - bootstrap
+        - config
+        - public
+        - routes
+        - src
+
+    excludePaths:
+        - */Models/*
+        - vendor/*

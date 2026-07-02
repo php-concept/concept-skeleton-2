@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include '@frontend/partials/_title.twig' with { page_title: block('title') } %}
+    {% block meta %}
+        <meta name="description" content="{% block meta_description %}{% endblock %}">
+        <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
+    {% endblock %}
+
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    {% block stylesheets %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+
+<main class="main{% if main_class is defined and main_class %} {{ main_class }}{% endif %}">
+    {% block  body %}{% endblock %}
+</main>
+
+{% block scripts %}{% endblock %}
+</body>
+</html>
