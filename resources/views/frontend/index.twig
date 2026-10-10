@@ -55,9 +55,9 @@
 <section id="standards" class="clients section">
   <div class="container">
     <div class="row align-items-center justify-content-center g-4 client-row">
-      {% for name in ['PSR-7', 'PSR-11', 'PSR-15', 'PSR-3', 'League', 'PHP 8.4+'] %}
+      {% for name in ['PSR-3', 'PSR-7', 'PSR-11', 'PSR-15', 'PHP 8.4+'] %}
       <div class="col-4 col-md-2 text-center">
-        <span class="client-logo">{{ name }}</span>
+        <span class="badge rounded-pill bg-secondary fs-6">{{ name }}</span>
       </div>
       {% endfor %}
     </div>
@@ -293,6 +293,87 @@ foreach ($stack-&gt;providers() as $provider) {
         </div>
       </div>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Try it — FormRequest demo #}
+<section id="try-it" class="try-it section light-background">
+  <div class="container section-title">
+    <h2>Try FormRequest</h2>
+    <p>Validation, CSRF, flash, and redirect-back — the FormSite surface in one block.</p>
+  </div>
+  <div class="container">
+    <div class="row gy-4 align-items-stretch">
+      <div class="col-lg-6">
+        <div class="try-copy">
+          <h3>What this exercises</h3>
+          <ul class="try-list">
+            <li><i class="bi bi-shield-check"></i><div><strong>FormRequest rules</strong><span><code>required|min:3</code> on name, <code>required|email</code> on email</span></div></li>
+            <li><i class="bi bi-key"></i><div><strong>CSRF protection</strong><span><code>_csrf_token</code> verified on POST before the handler runs</span></div></li>
+            <li><i class="bi bi-arrow-return-left"></i><div><strong>Redirect back</strong><span>Invalid input flashes errors + old values and returns to this section</span></div></li>
+            <li><i class="bi bi-chat-quote"></i><div><strong>Success flash</strong><span>Valid submit stores a success message and redirects to <code>/#try-it</code></span></div></li>
+            <li><i class="bi bi-signpost"></i><div><strong>Also try</strong><span><a href="{{ uri('hello', {name: 'Ada'}) }}">/hello/Ada</a> for a typed route param into Twig</span></div></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="try-form-card">
+          {% if flashes.success is defined and flashes.success %}
+            <div class="try-alert success" role="status">
+              {% for message in flashes.success %}
+                <p>{{ message }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
+          {% if flashes.error is defined and flashes.error %}
+            <div class="try-alert error" role="alert">
+              {% for message in flashes.error %}
+                <p>{{ message }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          <form class="try-form" action="{{ uri('echo') }}#try-it" method="post" novalidate>
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}">
+
+            <div class="try-field{% if errors.name is defined %} has-error{% endif %}">
+              <label for="echo-name">Name</label>
+              <input id="echo-name" type="text" name="name" value="{{ old.name|default('') }}" placeholder="At least 3 characters" autocomplete="name">
+              {% if errors.name is defined %}
+                <div class="try-field-errors">
+                  {% if errors.name is iterable %}
+                    {% for message in errors.name %}
+                      <span>{{ message }}</span>
+                    {% endfor %}
+                  {% else %}
+                    <span>{{ errors.name }}</span>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+
+            <div class="try-field{% if errors.email is defined %} has-error{% endif %}">
+              <label for="echo-email">Email</label>
+              <input id="echo-email" type="email" name="email" value="{{ old.email|default('') }}" placeholder="you@example.com" autocomplete="email">
+              {% if errors.email is defined %}
+                <div class="try-field-errors">
+                  {% if errors.email is iterable %}
+                    {% for message in errors.email %}
+                      <span>{{ message }}</span>
+                    {% endfor %}
+                  {% else %}
+                    <span>{{ errors.email }}</span>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+
+            <button type="submit" class="btn-primary">Submit /echo</button>
+            <p class="try-hint">Empty submit → validation redirect. Valid submit → success flash on this page.</p>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </section>

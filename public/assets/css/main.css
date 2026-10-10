@@ -1690,3 +1690,182 @@ body.mobile-nav-active {
     width: 100%;
   }
 }
+
+/* Try-it FormRequest demo */
+.try-copy {
+  height: 100%;
+  padding: 8px 8px 8px 0;
+}
+
+.try-copy h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.try-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.try-list li {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.try-list i {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  font-size: 18px;
+}
+
+.try-list strong {
+  display: block;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.try-list span {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+
+.try-list code {
+  font-size: 0.9em;
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  color: var(--heading-color);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.try-form-card {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 16px;
+  padding: 32px 28px;
+  height: 100%;
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--heading-color), transparent 92%);
+}
+
+.try-alert {
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.try-alert p {
+  margin: 0;
+}
+
+.try-alert p + p {
+  margin-top: 6px;
+}
+
+.try-alert.success {
+  background: color-mix(in srgb, #059652, transparent 90%);
+  border: 1px solid color-mix(in srgb, #059652, transparent 70%);
+  color: #0b5c3a;
+}
+
+.try-alert.error {
+  background: color-mix(in srgb, #df1529, transparent 92%);
+  border: 1px solid color-mix(in srgb, #df1529, transparent 70%);
+  color: #8a1020;
+}
+
+.try-field {
+  margin-bottom: 18px;
+}
+
+.try-field label {
+  display: block;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: var(--heading-color);
+}
+
+.try-field input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding: 12px 14px;
+  font-size: 15px;
+  color: var(--heading-color);
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.try-field input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color), transparent 85%);
+}
+
+.try-field.has-error input {
+  border-color: #df1529;
+}
+
+.try-field-errors {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.try-field-errors span {
+  font-size: 13px;
+  color: #df1529;
+}
+
+.try-form .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 70%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.try-form .btn-primary:hover {
+  background: transparent;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.try-hint {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .try-copy {
+    padding: 0;
+  }
+}
