@@ -1,25 +1,154 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% include '@frontend/partials/_title.twig' with { page_title: block('title') } %}
-    {% block meta %}
-        <meta name="description" content="{% block meta_description %}{% endblock %}">
-        <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
-    {% endblock %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}PHP Concept{% endblock %}</title>
+  <meta name="description" content="{% block meta_description %}Concept — clean multipurpose starter built on Bootstrap 5{% endblock %}">
 
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Questrial&display=swap" rel="stylesheet">
 
-    {% block stylesheets %}{% endblock %}
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+  {% block head %}{% endblock %}
 </head>
-<body class="{% block body_class %}{% endblock %}">
+<body class="{% block body_class %}index-page{% endblock %}">
 
-<main class="main{% if main_class is defined and main_class %} {{ main_class }}{% endif %}">
-    {% block  body %}{% endblock %}
-</main>
+  {% block header %}
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="{{ uri('home') }}" class="logo d-flex align-items-center">
+        <h1 class="sitename">PHP Concept</h1>
+      </a>
 
-{% block scripts %}{% endblock %}
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></i>
+      </nav>
+    </div>
+  </header>
+  {% endblock %}
+
+  <main class="main">
+    {% block content %}{% endblock %}
+  </main>
+
+  {% block footer %}
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-4">
+          <div class="footer-content">
+            <a href="{{ uri('home') }}" class="logo d-flex align-items-center mb-4">
+              <span class="sitename">PHP Concept</span>
+            </a>
+            <p class="mb-4">A clean multipurpose Bootstrap starter for agencies, startups, and product sites — inspired by modern corporate landing patterns.</p>
+            <div class="newsletter-form">
+              <h5>Stay Updated</h5>
+              <form action="#contact" method="get" class="newsletter">
+                <div class="input-group">
+                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                  <button type="submit" class="btn-subscribe" aria-label="Subscribe">
+                    <i class="bi bi-send"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about"><i class="bi bi-chevron-right"></i> About</a></li>
+              <li><a href="#services"><i class="bi bi-chevron-right"></i> Services</a></li>
+              <li><a href="#portfolio"><i class="bi bi-chevron-right"></i> Portfolio</a></li>
+              <li><a href="#team"><i class="bi bi-chevron-right"></i> Team</a></li>
+              <li><a href="#contact"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Solutions</h4>
+            <ul>
+              <li><a href="#services"><i class="bi bi-chevron-right"></i> Digital Strategy</a></li>
+              <li><a href="#services"><i class="bi bi-chevron-right"></i> Web Platforms</a></li>
+              <li><a href="#services"><i class="bi bi-chevron-right"></i> Product Design</a></li>
+              <li><a href="#services"><i class="bi bi-chevron-right"></i> Brand Systems</a></li>
+              <li><a href="#contact"><i class="bi bi-chevron-right"></i> Consulting</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-contact">
+            <h4>Get in Touch</h4>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+              <div class="contact-info"><p>2847 Maple Avenue<br>Los Angeles, CA 90210<br>United States</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+              <div class="contact-info"><p>+1 (555) 987-6543</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+              <div class="contact-info"><p>hello@concept.local</p></div>
+            </div>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="copyright">
+              <p>© <span>Copyright</span> <strong class="px-1 sitename">PHP Concept</strong> <span>All Rights Reserved</span></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  {% endblock %}
+
+  <a href="#hero" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  {% block scripts %}{% endblock %}
 </body>
 </html>

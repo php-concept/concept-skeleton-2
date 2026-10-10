@@ -1,20 +1,450 @@
 {% extends '@frontend/layouts/base.twig' %}
 
-{% block title %}Better Solutions For Your Business{% endblock %}
-{% block body_class %}index-page{% endblock %}
+{% block title %}PHP Concept — Transform Your Digital Future{% endblock %}
 
-{% set header_class = 'fixed-top' %}
-{% set nav_active = 'home' %}
+{% block content %}
 
-{% block body %}
-    <section id="hero" class="hero section dark-background">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-                    <h1>Better Solutions For Your Business</h1>
-                    <p>We are team of talented designers making websites with Bootstrap</p>
-                </div>
-            </div>
+{# Hero #}
+<section id="hero" class="hero section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="hero-content">
+          <h1>Transform Your <span>Digital Future</span></h1>
+          <p>Clean multipurpose layout for agencies and product teams — polished sections, clear hierarchy, and a Bootstrap 5 foundation ready to extend.</p>
+          <div class="hero-actions justify-content-center justify-content-lg-start">
+            <a href="#services" class="btn-primary">Start Journey</a>
+            <a href="#about" class="btn-video d-flex align-items-center">
+              <i class="bi bi-play-fill"></i>
+              <span>Watch Demo</span>
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-image">
+          <svg class="img-fluid floating hero-illustration" viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Digital product illustration">
+            <defs>
+              <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#5c99ee"/>
+                <stop offset="100%" stop-color="#344761"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#8bb8f5"/>
+                <stop offset="100%" stop-color="#5c99ee"/>
+              </linearGradient>
+            </defs>
+            <rect x="40" y="60" width="340" height="240" rx="24" fill="#f0f6ff" stroke="#d6e6fb"/>
+            <rect x="70" y="95" width="180" height="16" rx="8" fill="#c9ddf8"/>
+            <rect x="70" y="125" width="260" height="10" rx="5" fill="#dde9f8"/>
+            <rect x="70" y="145" width="220" height="10" rx="5" fill="#dde9f8"/>
+            <rect x="70" y="185" width="120" height="40" rx="10" fill="url(#g1)"/>
+            <circle cx="420" cy="140" r="88" fill="url(#g2)" opacity="0.9"/>
+            <rect x="280" y="210" width="200" height="150" rx="20" fill="#fff" stroke="#d6e6fb" filter="drop-shadow(0 12px 24px rgba(52,71,97,0.12))"/>
+            <rect x="305" y="240" width="90" height="10" rx="5" fill="#c9ddf8"/>
+            <rect x="305" y="265" width="150" height="8" rx="4" fill="#e8f0fa"/>
+            <rect x="305" y="285" width="130" height="8" rx="4" fill="#e8f0fa"/>
+            <circle cx="470" cy="255" r="22" fill="#5c99ee"/>
+            <path d="M462 255h16M470 247v16" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Clients #}
+<section id="clients" class="clients section">
+  <div class="container">
+    <div class="row align-items-center justify-content-center g-4 client-row">
+      {% for name in ['Nova', 'Pulse', 'Orbit', 'Vertex', 'Lumen', 'Apex'] %}
+      <div class="col-4 col-md-2 text-center">
+        <span class="client-logo">{{ name }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# About #}
+<section id="about" class="about section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="about-image">
+          <div class="about-visual" aria-hidden="true">
+            <div class="about-visual-inner">
+              <i class="bi bi-lightbulb"></i>
+              <span>Innovation first</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="content">
+          <h2>Crafting Excellence Through Innovation and Dedication</h2>
+          <p class="lead">We help teams ship polished digital experiences with a clear structure and reusable building blocks.</p>
+          <p>From landing pages to form-driven applications, Concept keeps the stack intentional: Bootstrap for the UI surface, Twig for views, and a minimal foundation you can grow into a product.</p>
+          <div class="stats-row">
+            <div class="stat-item">
+              <h3><span class="counter" data-target="150">0</span>+</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+              <h3><span class="counter" data-target="12">0</span>+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3><span class="counter" data-target="98">0</span>%</h3>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+          <div class="cta-wrapper">
+            <a href="#contact" class="btn-cta">
+              <span>Discover Our Story</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Services #}
+<section id="services" class="services section light-background">
+  <div class="container section-title">
+    <h2>Services</h2>
+    <p>Everything you need to launch a professional presence — design, engineering, and growth.</p>
+  </div>
+  <div class="container">
+    <div class="row gy-4">
+      {% set services = [
+        {icon: 'bi-palette', title: 'Creative Design', text: 'Brand systems, visual identity, and interface design that stay coherent across every touchpoint.'},
+        {icon: 'bi-code-slash', title: 'Web Development', text: 'Responsive Bootstrap sites and Twig-driven pages wired into a clean application skeleton.'},
+        {icon: 'bi-megaphone', title: 'Digital Marketing', text: 'Landing structures and conversion-focused layouts that support campaigns and product launches.'},
+        {icon: 'bi-phone', title: 'Mobile Experience', text: 'Mobile-first patterns so every section reads clearly on phones, tablets, and desktops.'},
+        {icon: 'bi-graph-up-arrow', title: 'Analytics Ready', text: 'Clear section hierarchy and CTAs that make measuring engagement straightforward.'},
+        {icon: 'bi-shield-check', title: 'Secure Foundations', text: 'Sensible defaults for forms, sessions, and error pages when you extend the skeleton.'}
+      ] %}
+      {% for s in services %}
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi {{ s.icon }}"></i></div>
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.text }}</p>
+          <a href="#contact" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Features #}
+<section id="features" class="features section">
+  <div class="container section-title">
+    <h2>Features</h2>
+    <p>Reusable blocks for a multipurpose corporate site — without the clutter.</p>
+  </div>
+  <div class="container">
+    <div class="row gy-4">
+      {% set features = [
+        {icon: 'bi-layout-text-window-reverse', title: 'Modular Sections', items: ['Hero with dual CTA', 'About + stats row', 'Services grid', 'Pricing plans']},
+        {icon: 'bi-phone-flip', title: 'Responsive Nav', items: ['Fixed header on scroll', 'Mobile offcanvas menu', 'Smooth section anchors', 'Scroll-to-top control']},
+        {icon: 'bi-brush', title: 'Design Tokens', items: ['Accent-driven palette', 'Questrial headings', 'Soft surface cards', 'Consistent spacing']},
+        {icon: 'bi-lightning-charge', title: 'Ready to Extend', items: ['Bootstrap 5 vendor', 'Bootstrap Icons', 'Twig layout base', 'Asset CSS / JS hooks']}
+      ] %}
+      {% for f in features %}
+      <div class="col-lg-3 col-md-6">
+        <div class="features-card">
+          <div class="features-icon"><i class="bi {{ f.icon }}"></i></div>
+          <h3>{{ f.title }}</h3>
+          <ul class="features-list">
+            {% for item in f.items %}
+            <li><i class="bi bi-check2"></i> {{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Portfolio #}
+<section id="portfolio" class="portfolio section light-background">
+  <div class="container section-title">
+    <h2>Portfolio</h2>
+    <p>Selected work across branding, product, and campaign experiences.</p>
+  </div>
+  <div class="container">
+    <div class="portfolio-filters-wrapper">
+      <ul class="portfolio-filters" id="portfolio-filters">
+        <li class="filter-active" data-filter="*">All</li>
+        <li data-filter="branding">Branding</li>
+        <li data-filter="web">Web</li>
+        <li data-filter="print">Print</li>
+        <li data-filter="motion">Motion</li>
+      </ul>
+    </div>
+    <div class="row gy-4 portfolio-grid">
+      {% set projects = [
+        {cat: 'branding', title: 'Brand Identity', tone: 'a'},
+        {cat: 'web', title: 'E-commerce Platform', tone: 'b'},
+        {cat: 'print', title: 'Magazine Design', tone: 'c'},
+        {cat: 'motion', title: 'Motion Graphics', tone: 'd'},
+        {cat: 'branding', title: 'Logo Collection', tone: 'e'},
+        {cat: 'web', title: 'Mobile App Design', tone: 'f'}
+      ] %}
+      {% for p in projects %}
+      <div class="col-lg-4 col-md-6 portfolio-item" data-category="{{ p.cat }}">
+        <div class="portfolio-card">
+          <div class="portfolio-thumb tone-{{ p.tone }}">
+            <div class="portfolio-overlay">
+              <h4>{{ p.title }}</h4>
+              <span>{{ p.cat|capitalize }}</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4>{{ p.title }}</h4>
+            <p>{{ p.cat|capitalize }} project showcase</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# How we work #}
+<section id="how-we-work" class="how-we-work section">
+  <div class="container section-title">
+    <h2>How We Work</h2>
+    <p>A simple process from discovery to launch.</p>
+  </div>
+  <div class="container">
+    <div class="row gy-4">
+      {% set steps = [
+        {num: '01', title: 'Discover', text: 'Clarify goals, audience, and the one job each page section must do.'},
+        {num: '02', title: 'Design', text: 'Shape hierarchy, typography, and accent-driven UI with Bootstrap structure.'},
+        {num: '03', title: 'Build', text: 'Wire Twig layouts, assets, and content blocks into a maintainable skeleton.'},
+        {num: '04', title: 'Launch', text: 'Polish responsive behavior, CTAs, and hand off a site ready to grow.'}
+      ] %}
+      {% for step in steps %}
+      <div class="col-lg-3 col-md-6">
+        <div class="work-step">
+          <span class="step-num">{{ step.num }}</span>
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.text }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Testimonials #}
+<section id="testimonials" class="testimonials section light-background">
+  <div class="container section-title">
+    <h2>Testimonials</h2>
+    <p>Teams use Concept to ship a polished first impression faster.</p>
+  </div>
+  <div class="container">
+    <div class="row gy-4">
+      {% set quotes = [
+        {name: 'Jessica Martinez', role: 'UX Designer', text: 'Clear sections and a calm visual system — we had a credible landing page without rebuilding the stack.', initials: 'JM'},
+        {name: 'David Rodriguez', role: 'Software Engineer', text: 'Bootstrap wiring plus Twig layout made it easy to extend home into product pages later.', initials: 'DR'},
+        {name: 'Amanda Wilson', role: 'Creative Director', text: 'The accent color, spacing, and service cards feel intentional. Clients notice the polish immediately.', initials: 'AW'}
+      ] %}
+      {% for q in quotes %}
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-item">
+          <div class="testimonial-header">
+            <div class="avatar" aria-hidden="true">{{ q.initials }}</div>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            <p>{{ q.text }}</p>
+          </div>
+          <div class="testimonial-footer">
+            <h5>{{ q.name }}</h5>
+            <span>{{ q.role }}</span>
+            <div class="quote-icon"><i class="bi bi-chat-quote-fill"></i></div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Pricing #}
+<section id="pricing" class="pricing section">
+  <div class="container section-title">
+    <h2>Pricing</h2>
+    <p>Straightforward plans for individuals, teams, and larger orgs.</p>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3 class="plan-name">Starter</h3>
+            <p class="plan-description">Perfect for individuals and small projects getting started.</p>
+          </div>
+          <div class="pricing-display">
+            <div class="price"><span class="currency">$</span><span class="amount">19</span><span class="period">/mo</span></div>
+          </div>
+          <div class="features-list">
+            <div class="feature"><i class="bi bi-check2"></i><span>5 Projects</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>10GB Storage</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>Email Support</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>Basic Analytics</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>SSL Certificate</span></div>
+          </div>
+          <a href="#contact" class="btn-plan">Get Started</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card featured">
+          <div class="plan-header">
+            <div class="featured-badge">Most Popular</div>
+            <h3 class="plan-name">Professional</h3>
+            <p class="plan-description">Ideal for growing businesses and teams that need more power.</p>
+          </div>
+          <div class="pricing-display">
+            <div class="price"><span class="currency">$</span><span class="amount">49</span><span class="period">/mo</span></div>
+          </div>
+          <div class="features-list">
+            <div class="feature"><i class="bi bi-check2"></i><span>25 Projects</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>100GB Storage</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>Priority Support</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>Advanced Analytics</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>Team Collaboration</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>Custom Integrations</span></div>
+          </div>
+          <a href="#contact" class="btn-plan">Start Free Trial</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-description">Comprehensive solution for large organizations with specific needs.</p>
+          </div>
+          <div class="pricing-display">
+            <div class="price"><span class="currency">$</span><span class="amount">99</span><span class="period">/mo</span></div>
+          </div>
+          <div class="features-list">
+            <div class="feature"><i class="bi bi-check2"></i><span>Unlimited Projects</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>1TB Storage</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>24/7 Phone Support</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>Enterprise Analytics</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>Advanced Security</span></div>
+            <div class="feature"><i class="bi bi-check2"></i><span>Dedicated Account Manager</span></div>
+          </div>
+          <a href="#contact" class="btn-plan">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8 text-center">
+        <p class="guarantee-text">30-day money-back guarantee · No setup fees · Cancel anytime</p>
+        <p class="contact-text">Need a custom plan? <a href="#contact">Contact our sales team</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Team #}
+<section id="team" class="team section light-background">
+  <div class="container section-title">
+    <h2>Team</h2>
+    <p>People behind the craft — design, engineering, and product.</p>
+  </div>
+  <div class="container">
+    <div class="row gy-4">
+      {% set members = [
+        {name: 'Alex Morgan', role: 'CEO & Founder', initials: 'AM'},
+        {name: 'Sam Rivera', role: 'Lead Designer', initials: 'SR'},
+        {name: 'Jordan Lee', role: 'Engineering Lead', initials: 'JL'},
+        {name: 'Casey Brooks', role: 'Product Manager', initials: 'CB'}
+      ] %}
+      {% for m in members %}
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card">
+          <div class="member-avatar" aria-hidden="true">{{ m.initials }}</div>
+          <h3>{{ m.name }}</h3>
+          <span>{{ m.role }}</span>
+          <div class="social">
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Contact #}
+<section id="contact" class="contact section">
+  <div class="container section-title">
+    <h2>Contact</h2>
+    <p>Tell us about your project — we usually reply within one business day.</p>
+  </div>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <div class="info-item">
+          <i class="bi bi-geo-alt"></i>
+          <div>
+            <h3>Address</h3>
+            <p>2847 Maple Avenue, Los Angeles, CA 90210</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="bi bi-telephone"></i>
+          <div>
+            <h3>Call Us</h3>
+            <p>+1 (555) 987-6543</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="bi bi-envelope"></i>
+          <div>
+            <h3>Email Us</h3>
+            <p>hello@concept.local</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <form class="contact-form" action="#contact" method="get">
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="col-12">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+            <div class="col-12">
+              <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn-send">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% endblock %}

@@ -1,19 +1,26 @@
 <?php declare(strict_types=1);
 
+use Concept\App\Bootstrap\ApplicationRuntimeBootstrap;
+use Concept\App\Bootstrap\ApplicationStackBootstrap;
+use Concept\App\Bootstrap\EarlyErrorHandlingBootstrap;
+use Concept\App\Bootstrap\FoundationBootstrap;
 use Concept\Core\App;
-use Concept\Extensions\ErrorHandlerWhoops\EarlyWhoopsBootstrap;
 use League\Container\Container;
-use Whoops\Run as Whoops;
-
-$root = dirname(__DIR__);
 
 $app = App::create();
+
+/** @var array<string, string> $pathMap */
+$pathMap = require __DIR__ . '/path-map.php';
+$root = dirname(__DIR__);
+
 /** @var Container $container */
 $container = $app->getContainer();
-//$container->add(Whoops::class, EarlyWhoopsBootstrap::register($root))->setShared(true);
+$debug = ($_ENV['APP_DEBUG'] ?? 'false') === 'true';
+$fallbackFilePath = $root . '/resources/views/errors/fallback/500.php';
 
-/** @var callable(string): list<callable> $providersFactory */
-$providersFactory = require $root . '/bootstrap/providers.php';
-$app->registerServiceProviders($providersFactory($root));
+(new EarlyErrorHandlingBootstrap($debug, $fallbackFilePath))->boot($container);
+(new FoundationBootstrap($root, $pathMap))->boot($container);
+(new ApplicationStackBootstrap())->boot($container);
+(new ApplicationRuntimeBootstrap())->boot($container);
 
 return $app;
