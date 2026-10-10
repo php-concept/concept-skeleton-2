@@ -97,6 +97,13 @@ section,
   z-index: 997;
 }
 
+.header .logo img,
+.footer .logo img {
+  max-height: 36px;
+  width: auto;
+  margin-right: 10px;
+}
+
 .header .logo h1,
 .header .logo .sitename {
   font-size: 24px;
@@ -1236,4 +1243,242 @@ body.mobile-nav-active {
 .scroll-top:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), #000 12%);
+}
+
+/* Hero eyebrow */
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 14px;
+}
+
+/* Architecture layers card (hero) */
+.layers-card {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 28px 24px;
+  border-radius: 16px;
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0 16px 40px color-mix(in srgb, var(--heading-color), transparent 88%);
+  text-align: left;
+}
+
+.layer-row {
+  border-radius: 12px;
+  padding: 16px 18px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.layer-stack {
+  background: color-mix(in srgb, #f0a202, transparent 90%);
+  border-color: color-mix(in srgb, #f0a202, transparent 70%);
+}
+
+.layer-ext {
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 75%);
+}
+
+.layer-core {
+  background: color-mix(in srgb, var(--heading-color), transparent 94%);
+  border-color: color-mix(in srgb, var(--heading-color), transparent 80%);
+}
+
+.layer-name {
+  display: block;
+  font-family: var(--heading-font);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 6px;
+}
+
+.layer-hint {
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.layer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.layer-badges span {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  color: var(--heading-color);
+}
+
+.layer-arrow {
+  text-align: center;
+  font-size: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+  padding: 8px 0;
+  font-family: ui-monospace, monospace;
+}
+
+/* Architecture cards */
+.arch-card {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 14px;
+  padding: 32px 26px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.arch-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--default-color), transparent 86%);
+}
+
+.arch-card.featured {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 45%);
+  box-shadow: 0 12px 36px color-mix(in srgb, var(--accent-color), transparent 78%);
+}
+
+.arch-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.arch-card h3 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.arch-pkg {
+  margin-bottom: 14px;
+}
+
+.arch-pkg code {
+  font-size: 13px;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.arch-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.arch-list li {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.arch-list i {
+  color: var(--accent-color);
+}
+
+.architecture-note {
+  text-align: center;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 24px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent-color), transparent 94%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.architecture-note p {
+  margin: 0;
+  color: var(--heading-color);
+}
+
+/* Capability cards */
+.cap-card {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  border-radius: 12px;
+  padding: 24px 20px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.cap-card:hover {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--default-color), transparent 88%);
+}
+
+.cap-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.cap-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.cap-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+}
+
+/* Code panel */
+.code-panel {
+  margin: 0;
+  padding: 28px 24px;
+  border-radius: 14px;
+  background: #0b1e38;
+  color: #d7e6f8;
+  border: 1px solid color-mix(in srgb, var(--heading-color), transparent 70%);
+  box-shadow: 0 16px 40px color-mix(in srgb, var(--heading-color), transparent 82%);
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.code-panel code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color: inherit;
+  white-space: pre;
+}
+
+.stack-stats .stat-item h3 {
+  font-size: 28px;
+  color: var(--accent-color);
+}
+
+.section-title code,
+.content code {
+  font-size: 0.9em;
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  color: var(--heading-color);
+  padding: 1px 6px;
+  border-radius: 4px;
 }
