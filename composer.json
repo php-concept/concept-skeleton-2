@@ -10,8 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Concept\\": "src/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Concept\\": "src/"
         }
     },
     "autoload-dev": {

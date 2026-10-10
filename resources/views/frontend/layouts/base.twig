@@ -28,13 +28,13 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#architecture">Architecture</a></li>
-          <li><a href="#advantages">Advantages</a></li>
-          <li><a href="#principles">Principles</a></li>
-          <li><a href="#capabilities">Capabilities</a></li>
-          <li><a href="#stack">Stack</a></li>
-          <li><a href="#start">Get Started</a></li>
+          <li><a href="{{ uri('home') }}#hero">Home</a></li>
+          <li><a href="{{ uri('home') }}#architecture">Architecture</a></li>
+          <li><a href="{{ uri('home') }}#advantages">Advantages</a></li>
+          <li><a href="{{ uri('home') }}#principles">Principles</a></li>
+          <li><a href="{{ uri('home') }}#capabilities">Capabilities</a></li>
+          <li><a href="{{ uri('home') }}#stack">Stack</a></li>
+          <li><a href="{{ uri('home') }}#start">Get Started</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></i>
       </nav>
@@ -107,7 +107,7 @@
   </footer>
   {% endblock %}
 
-  <a href="#hero" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+  <a href="{{ uri('home') }}#hero" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
     <i class="bi bi-arrow-up-short"></i>
   </a>
 

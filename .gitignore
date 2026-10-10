@@ -1,7 +1,7 @@
 /.idea
 /.cursor
-/.phpunit.cache
 /storage
 /vendor
 /public/vendor
 .env
+docker-compose.yml

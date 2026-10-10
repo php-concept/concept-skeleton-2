@@ -258,7 +258,6 @@ php-concept/extension-path-manager
 php-concept/stack              # + transitive extensions / core
 php-concept/extension-config
 php-concept/extension-path-manager
-vlucas/phpdotenv
 ```
 
 Опційно явно: `php-concept/core-2` (якщо хочемо pinned version у app-lock, не лише транзитивно).
@@ -279,12 +278,12 @@ Scripts: `phpstan`, `boot-smoke`, `ci` = phpstan + boot-smoke, `console`.
 
 ## 8. Quality gate (з дня 0)
 
-| Перевірка | Очікування |
-|-----------|------------|
-| `composer phpstan` | level 9, green |
+| Перевірка | Очікування                                               |
+|-----------|----------------------------------------------------------|
+| `composer phpstan` | level 10, green                                           |
 | `composer boot-smoke` | bootstrap + PathManager + Config + Router + route `home` |
-| GitHub Actions `ci.yml` | на push/PR |
-| Тести | опційно: 3–5 HTTP smoke пізніше; не блокер v1 |
+| GitHub Actions `ci.yml` | на push/PR                                               |
+| Тести | опційно: 3–5 HTTP smoke пізніше; не блокер v1            |
 
 Не merge / не tag без green `composer ci`.
 

@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: concept_skeleton_2
+    user: "${UID:-1000}:${GID:-1000}"
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html

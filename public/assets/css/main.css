@@ -1482,3 +1482,211 @@ body.mobile-nav-active {
   padding: 1px 6px;
   border-radius: 4px;
 }
+
+/* Error pages */
+.error-section {
+  position: relative;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  padding: 140px 0 80px;
+  overflow: hidden;
+}
+
+.error-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--accent-color) 10%, var(--accent-color) 45%, transparent 45%);
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.error-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.error-panel {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 16px;
+  padding: 48px 36px 40px;
+  box-shadow: 0 16px 40px color-mix(in srgb, var(--heading-color), transparent 90%);
+  position: relative;
+}
+
+.error-panel-wide {
+  max-width: 720px;
+}
+
+.error-code {
+  font-family: var(--heading-font);
+  font-size: clamp(72px, 14vw, 120px);
+  font-weight: 700;
+  line-height: 1;
+  color: color-mix(in srgb, var(--accent-color), transparent 70%);
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  letter-spacing: -0.04em;
+}
+
+.error-icon {
+  width: 64px;
+  height: 64px;
+  margin: 36px auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  font-size: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.error-panel h1 {
+  font-size: clamp(28px, 4vw, 36px);
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.error-panel > p {
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  margin-bottom: 28px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.error-section .btn-primary,
+.error-section .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.error-section .btn-primary {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.error-section .btn-primary:hover {
+  background: transparent;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.error-section .btn-secondary {
+  background: transparent;
+  color: var(--heading-color);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.error-section .btn-secondary:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.error-meta {
+  margin: 28px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.error-box {
+  text-align: left;
+  margin: 0 0 20px;
+  padding: 20px 22px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent-color), transparent 94%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.error-box.muted {
+  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.error-box h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.error-box ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.error-box li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.error-box ul.old-values {
+  list-style: none;
+  padding: 0;
+}
+
+.error-box ul.old-values li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.error-box ul.old-values li:last-child {
+  border-bottom: none;
+}
+
+.error-box ul.old-values li span:first-child {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+@media (max-width: 576px) {
+  .error-panel {
+    padding: 40px 20px 32px;
+  }
+
+  .error-actions {
+    flex-direction: column;
+  }
+
+  .error-section .btn-primary,
+  .error-section .btn-secondary {
+    width: 100%;
+  }
+}
