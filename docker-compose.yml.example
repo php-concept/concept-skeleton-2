@@ -8,3 +8,18 @@ services:
     volumes:
       - .:/var/www/html
       - ./docker/apache/vhost.conf:/etc/apache2/sites-available/000-default.conf
+      - ./docker/php/error-reporting.ini:/usr/local/etc/php/conf.d/error-reporting.ini
+#    environment:
+#      - MYSQL_HOST=db
+#    depends_on:
+#      - db
+
+#  db:
+#    image: mysql:8.4
+#    command: --mysql-native-password=ON
+#    container_name: concept_skeleton_db_2
+#    environment:
+#      MYSQL_DATABASE: concept_skeleton_db_2
+#      MYSQL_ROOT_PASSWORD: root
+#    ports:
+#      - "3306:3306"

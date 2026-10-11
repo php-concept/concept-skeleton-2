@@ -1,5 +1,8 @@
 {
     "name": "php-concept/skeleton",
+    "description": "FormSite-level starter for PHP Concept 2 — thin Core, opt-in Extensions, explicit ConceptStack",
+    "type": "project",
+    "license": "MIT",
     "require": {
         "php": "^8.4",
         "twbs/bootstrap": "^5.3",
