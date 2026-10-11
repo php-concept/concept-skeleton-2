@@ -1,5 +1,5 @@
 {
-    "name": "php-concept/skeleton",
+    "name": "php-concept/skeleton-2",
     "description": "FormSite-level starter for PHP Concept 2 — thin Core, opt-in Extensions, explicit ConceptStack",
     "type": "project",
     "license": "MIT",
