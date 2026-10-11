@@ -5,3 +5,4 @@
 /public/vendor
 .env
 docker-compose.yml
+.php-cs-fixer.cache

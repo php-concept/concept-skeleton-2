@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+echo "→ composer lint"
+composer lint --quiet
+
+echo "→ composer phpstan"
+composer phpstan --quiet
+
+echo "Pre-push checks OK."

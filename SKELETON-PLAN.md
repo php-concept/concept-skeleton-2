@@ -327,10 +327,10 @@ Scripts: `phpstan`, `boot-smoke`, `ci` = phpstan + boot-smoke, `console`.
 
 ### Phase 3 — Safety
 
-9. `bin/boot-smoke.php`
-10. PHPStan green
-11. `.github/workflows/ci.yml`
-12. Короткий `AGENTS.md` / README (setup, sibling repos, `composer ci`)
+9. [x] `bin/boot-smoke.php`
+10. [x] PHPStan green
+11. [x] `.github/workflows/ci.yml`
+12. [x] Короткий `AGENTS.md` / README (setup, sibling repos, `composer ci`)
 
 ### Phase 4 — Docs add-on (після v1)
 

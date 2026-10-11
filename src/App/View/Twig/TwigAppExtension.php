@@ -4,7 +4,6 @@ namespace Concept\App\View\Twig;
 
 use Concept\Extensions\Config\Contracts\ConfigInterface;
 use Concept\Extensions\Http\Contracts\UrlGeneratorInterface;
-use Psr\Http\Message\ServerRequestInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 

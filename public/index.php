@@ -10,4 +10,4 @@ $app = require_once __DIR__ . '/../bootstrap/app.php';
 
 $response = $app->handle();
 
-(new SapiEmitter)->emit($response);
+(new SapiEmitter())->emit($response);

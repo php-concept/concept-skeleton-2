@@ -26,11 +26,13 @@ class IndexController
     public function echo(EchoRequest $request): ResponseInterface
     {
         $validated = $request->validated();
+        $name = $validated['name'] ?? null;
+        $email = $validated['email'] ?? null;
 
         $this->flashBag->addSuccess(sprintf(
             'Hello, %s — FormRequest validated %s and redirected back with flash.',
-            $validated['name'] ?? 'friend',
-            $validated['email'] ?? '',
+            is_string($name) ? $name : 'friend',
+            is_string($email) ? $email : '',
         ));
 
         return $this->response->redirect($this->url->uri('home') . '#try-it');

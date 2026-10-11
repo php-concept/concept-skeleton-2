@@ -1,6 +1,7 @@
 {
     "name": "php-concept/skeleton",
     "require": {
+        "php": "^8.4",
         "twbs/bootstrap": "^5.3",
         "twbs/bootstrap-icons": "^1.13",
         "php-concept/core-2": "^1.0",
@@ -19,7 +20,8 @@
         }
     },
     "require-dev": {
-        "phpstan/phpstan": "^2.1"
+        "phpstan/phpstan": "^2.1",
+        "friendsofphp/php-cs-fixer": "^3.75"
     },
     "scripts": {
         "post-install-cmd": [
@@ -35,7 +37,20 @@
             "mkdir -p public/vendor/bootstrap-icons",
             "cp -R vendor/twbs/bootstrap-icons/font/. public/vendor/bootstrap-icons/"
         ],
+        "lint": "php-cs-fixer fix --dry-run --diff --ansi",
+        "lint:fix": "php-cs-fixer fix --ansi",
         "phpstan": "vendor/bin/phpstan analyze --memory-limit=2G",
+        "boot-smoke": "php bin/boot-smoke.php",
+        "ci": [
+            "@lint",
+            "@phpstan",
+            "@boot-smoke"
+        ],
         "console": "php bin/console.php"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     }
 }

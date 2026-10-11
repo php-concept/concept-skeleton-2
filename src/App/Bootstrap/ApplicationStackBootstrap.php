@@ -48,7 +48,7 @@ final class ApplicationStackBootstrap
         $sessionFilePath = $config->get(ConfigKey::SESSION_FILE_PATH);
         $stack->addSession()
             ->setOptions($app->sessionOptions())
-            ->setHandlerFactory(function() use ($pathManager, $sessionFilePath): NativeFileSessionHandler {
+            ->setHandlerFactory(function () use ($pathManager, $sessionFilePath): NativeFileSessionHandler {
                 return is_string($sessionFilePath) && $sessionFilePath !== ''
                     ? new NativeFileSessionHandler($pathManager->root($sessionFilePath))
                     : new NativeFileSessionHandler();
