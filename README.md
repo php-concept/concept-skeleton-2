@@ -46,7 +46,7 @@ Database, Components, and other product add-ons stay opt-in.
 ## Installation
 
 ```bash
-composer create-project php-concept/skeleton my-app
+composer create-project php-concept/skeleton-2 my-app
 # or: git clone git@github.com:php-concept/concept-skeleton-2.git my-app && cd my-app && composer install
 
 cp .env.example .env
