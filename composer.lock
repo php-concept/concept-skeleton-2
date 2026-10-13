@@ -995,7 +995,7 @@
         },
         {
             "name": "php-concept/brick-casting-valinor",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-casting-valinor.git",
@@ -1026,13 +1026,13 @@
             "description": "Concept stack brick: casting (Valinor)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-casting-valinor/issues",
-                "source": "https://github.com/php-concept-bricks/brick-casting-valinor/tree/v1.0.7"
+                "source": "https://github.com/php-concept-bricks/brick-casting-valinor/tree/v1.0.8"
             },
             "time": "2026-10-12T13:20:09+00:00"
         },
         {
             "name": "php-concept/brick-console-symfony",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-console-symfony.git",
@@ -1064,13 +1064,13 @@
             "description": "Concept stack brick: console (Symfony)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-console-symfony/issues",
-                "source": "https://github.com/php-concept-bricks/brick-console-symfony/tree/v1.0.7"
+                "source": "https://github.com/php-concept-bricks/brick-console-symfony/tree/v1.0.8"
             },
             "time": "2026-10-12T13:20:09+00:00"
         },
         {
             "name": "php-concept/brick-data-masker",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-data-masker.git",
@@ -1101,22 +1101,22 @@
             "description": "Concept stack brick: data masker",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-data-masker/issues",
-                "source": "https://github.com/php-concept-bricks/brick-data-masker/tree/v1.0.7"
+                "source": "https://github.com/php-concept-bricks/brick-data-masker/tree/v1.0.8"
             },
             "time": "2026-10-12T13:20:09+00:00"
         },
         {
             "name": "php-concept/brick-error-handler-whoops",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-error-handler-whoops.git",
-                "reference": "e527ef0e74fb355daaa177d0e442da031bf8d403"
+                "reference": "866667d65ec00852a1c24699a90efdcc23a934de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-bricks/brick-error-handler-whoops/zipball/e527ef0e74fb355daaa177d0e442da031bf8d403",
-                "reference": "e527ef0e74fb355daaa177d0e442da031bf8d403",
+                "url": "https://api.github.com/repos/php-concept-bricks/brick-error-handler-whoops/zipball/866667d65ec00852a1c24699a90efdcc23a934de",
+                "reference": "866667d65ec00852a1c24699a90efdcc23a934de",
                 "shasum": ""
             },
             "require": {
@@ -1146,13 +1146,13 @@
             "description": "Concept stack brick: error handling (Whoops)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-error-handler-whoops/issues",
-                "source": "https://github.com/php-concept-bricks/brick-error-handler-whoops/tree/v1.0.7"
+                "source": "https://github.com/php-concept-bricks/brick-error-handler-whoops/tree/v1.0.8"
             },
-            "time": "2026-10-12T13:20:09+00:00"
+            "time": "2026-10-13T08:39:27+00:00"
         },
         {
             "name": "php-concept/brick-http",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-http.git",
@@ -1189,13 +1189,13 @@
             "description": "Concept stack brick: HTTP",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-http/issues",
-                "source": "https://github.com/php-concept-bricks/brick-http/tree/v1.0.7"
+                "source": "https://github.com/php-concept-bricks/brick-http/tree/v1.0.8"
             },
             "time": "2026-10-12T15:28:32+00:00"
         },
         {
             "name": "php-concept/brick-logger-monolog",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-logger-monolog.git",
@@ -1229,13 +1229,13 @@
             "description": "Concept stack brick: logging (Monolog)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-logger-monolog/issues",
-                "source": "https://github.com/php-concept-bricks/brick-logger-monolog/tree/v1.0.7"
+                "source": "https://github.com/php-concept-bricks/brick-logger-monolog/tree/v1.0.8"
             },
             "time": "2026-10-12T13:20:09+00:00"
         },
         {
             "name": "php-concept/brick-session-symfony",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-session-symfony.git",
@@ -1269,13 +1269,13 @@
             "description": "Concept stack brick: session (Symfony)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-session-symfony/issues",
-                "source": "https://github.com/php-concept-bricks/brick-session-symfony/tree/v1.0.7"
+                "source": "https://github.com/php-concept-bricks/brick-session-symfony/tree/v1.0.8"
             },
             "time": "2026-10-12T13:20:09+00:00"
         },
         {
             "name": "php-concept/brick-validation-rakit",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-validation-rakit.git",
@@ -1312,13 +1312,13 @@
             "description": "Concept stack brick: validation (Rakit)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-validation-rakit/issues",
-                "source": "https://github.com/php-concept-bricks/brick-validation-rakit/tree/v1.0.7"
+                "source": "https://github.com/php-concept-bricks/brick-validation-rakit/tree/v1.0.8"
             },
             "time": "2026-10-12T13:20:09+00:00"
         },
         {
             "name": "php-concept/brick-view",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-view.git",
@@ -1354,22 +1354,22 @@
             "description": "Concept stack brick: view (Twig / Plates)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-view/issues",
-                "source": "https://github.com/php-concept-bricks/brick-view/tree/v1.0.7"
+                "source": "https://github.com/php-concept-bricks/brick-view/tree/v1.0.8"
             },
             "time": "2026-10-12T13:20:09+00:00"
         },
         {
             "name": "php-concept/core-2",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept/concept-core-2.git",
-                "reference": "8b948920a20458953046f349422bca15b469f40b"
+                "reference": "34c2edad46a2a95a4d802902cdaba8704d2c22c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept/concept-core-2/zipball/8b948920a20458953046f349422bca15b469f40b",
-                "reference": "8b948920a20458953046f349422bca15b469f40b",
+                "url": "https://api.github.com/repos/php-concept/concept-core-2/zipball/34c2edad46a2a95a4d802902cdaba8704d2c22c5",
+                "reference": "34c2edad46a2a95a4d802902cdaba8704d2c22c5",
                 "shasum": ""
             },
             "require": {
@@ -1397,22 +1397,22 @@
             "description": "Concept Framework Core Engine",
             "support": {
                 "issues": "https://github.com/php-concept/concept-core-2/issues",
-                "source": "https://github.com/php-concept/concept-core-2/tree/v1.0.4"
+                "source": "https://github.com/php-concept/concept-core-2/tree/v1.0.5"
             },
-            "time": "2026-10-08T07:35:11+00:00"
+            "time": "2026-10-13T08:27:05+00:00"
         },
         {
             "name": "php-concept/extension-casting-valinor",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-casting-valinor.git",
-                "reference": "4d13de9f45e8e9b4199ccb39578942527f2f946d"
+                "reference": "83df5831143a1412ffa32dc46797fa185f11516d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-casting-valinor/zipball/4d13de9f45e8e9b4199ccb39578942527f2f946d",
-                "reference": "4d13de9f45e8e9b4199ccb39578942527f2f946d",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-casting-valinor/zipball/83df5831143a1412ffa32dc46797fa185f11516d",
+                "reference": "83df5831143a1412ffa32dc46797fa185f11516d",
                 "shasum": ""
             },
             "require": {
@@ -1437,22 +1437,22 @@
             "description": "Concept Casting extension — Valinor caster and typed route parameter resolving",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-casting-valinor/issues",
-                "source": "https://github.com/php-concept-extensions/extension-casting-valinor/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-casting-valinor/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-config",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-config.git",
-                "reference": "162789e21fb6a017c679af89017182f43705524e"
+                "reference": "3fb1772957dd862adde272bbc1bfe28c833b19e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-config/zipball/162789e21fb6a017c679af89017182f43705524e",
-                "reference": "162789e21fb6a017c679af89017182f43705524e",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-config/zipball/3fb1772957dd862adde272bbc1bfe28c833b19e7",
+                "reference": "3fb1772957dd862adde272bbc1bfe28c833b19e7",
                 "shasum": ""
             },
             "require": {
@@ -1476,22 +1476,22 @@
             "description": "Concept Config extension — PHP config files and .env merge",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-config/issues",
-                "source": "https://github.com/php-concept-extensions/extension-config/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-config/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-console-symfony",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-console-symfony.git",
-                "reference": "163a2dc10042b14b39bfea1970056bd767fabe5c"
+                "reference": "83fd63cb3c3ef7bf4418b64716c6041a9895daa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-console-symfony/zipball/163a2dc10042b14b39bfea1970056bd767fabe5c",
-                "reference": "163a2dc10042b14b39bfea1970056bd767fabe5c",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-console-symfony/zipball/83fd63cb3c3ef7bf4418b64716c6041a9895daa2",
+                "reference": "83fd63cb3c3ef7bf4418b64716c6041a9895daa2",
                 "shasum": ""
             },
             "require": {
@@ -1514,22 +1514,22 @@
             "description": "Concept Console extension — Symfony Console application shell",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-console-symfony/issues",
-                "source": "https://github.com/php-concept-extensions/extension-console-symfony/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-console-symfony/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-csrf",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-csrf.git",
-                "reference": "98ef0a95fceecaeef4758fe4be29fc4c8f83e602"
+                "reference": "314491ae56e0b629736e97a085ff288bc3d16aa9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-csrf/zipball/98ef0a95fceecaeef4758fe4be29fc4c8f83e602",
-                "reference": "98ef0a95fceecaeef4758fe4be29fc4c8f83e602",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-csrf/zipball/314491ae56e0b629736e97a085ff288bc3d16aa9",
+                "reference": "314491ae56e0b629736e97a085ff288bc3d16aa9",
                 "shasum": ""
             },
             "require": {
@@ -1557,22 +1557,22 @@
             "description": "Concept CSRF extension — token manager and verification middleware",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-csrf/issues",
-                "source": "https://github.com/php-concept-extensions/extension-csrf/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-csrf/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-data-masker",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-data-masker.git",
-                "reference": "f428a540a235937b7f70b625919d82bd8c470b8a"
+                "reference": "70e418d685d76b818573def1fd0bd88a8c35ac07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-data-masker/zipball/f428a540a235937b7f70b625919d82bd8c470b8a",
-                "reference": "f428a540a235937b7f70b625919d82bd8c470b8a",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-data-masker/zipball/70e418d685d76b818573def1fd0bd88a8c35ac07",
+                "reference": "70e418d685d76b818573def1fd0bd88a8c35ac07",
                 "shasum": ""
             },
             "require": {
@@ -1594,22 +1594,22 @@
             "description": "Concept DataMasker extension — redact sensitive values in logs and debug output",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-data-masker/issues",
-                "source": "https://github.com/php-concept-extensions/extension-data-masker/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-data-masker/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-error-handler-whoops",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-error-handler-whoops.git",
-                "reference": "3e49e5f664aed931e1fbc95be8300235c84d9bb1"
+                "reference": "1778b0390c2c7848fc49265fc054fcae4d87123d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-error-handler-whoops/zipball/3e49e5f664aed931e1fbc95be8300235c84d9bb1",
-                "reference": "3e49e5f664aed931e1fbc95be8300235c84d9bb1",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-error-handler-whoops/zipball/1778b0390c2c7848fc49265fc054fcae4d87123d",
+                "reference": "1778b0390c2c7848fc49265fc054fcae4d87123d",
                 "shasum": ""
             },
             "require": {
@@ -1635,22 +1635,22 @@
             "description": "Concept Error Handler extension — Whoops integration",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-error-handler-whoops/issues",
-                "source": "https://github.com/php-concept-extensions/extension-error-handler-whoops/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-error-handler-whoops/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-event",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-event.git",
-                "reference": "ceb796877e4cda4be95a2766edfec8d4045009a0"
+                "reference": "7604605be57c0d87c378eb01c13d985864708450"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-event/zipball/ceb796877e4cda4be95a2766edfec8d4045009a0",
-                "reference": "ceb796877e4cda4be95a2766edfec8d4045009a0",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-event/zipball/7604605be57c0d87c378eb01c13d985864708450",
+                "reference": "7604605be57c0d87c378eb01c13d985864708450",
                 "shasum": ""
             },
             "require": {
@@ -1673,22 +1673,22 @@
             "description": "Concept Event extension — League Event dispatcher wiring",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-event/issues",
-                "source": "https://github.com/php-concept-extensions/extension-event/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-event/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-form-request",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-form-request.git",
-                "reference": "6551947a6cca93afe24d861e26a724c0a1482bfb"
+                "reference": "2d1e3f6ffe1d59e5069c4099a18a4a19cd4f400e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-form-request/zipball/6551947a6cca93afe24d861e26a724c0a1482bfb",
-                "reference": "6551947a6cca93afe24d861e26a724c0a1482bfb",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-form-request/zipball/2d1e3f6ffe1d59e5069c4099a18a4a19cd4f400e",
+                "reference": "2d1e3f6ffe1d59e5069c4099a18a4a19cd4f400e",
                 "shasum": ""
             },
             "require": {
@@ -1715,22 +1715,22 @@
             "description": "Concept FormRequest extension — form request factory and argument resolver",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-form-request/issues",
-                "source": "https://github.com/php-concept-extensions/extension-form-request/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-form-request/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-http",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-http.git",
-                "reference": "e6d286e08d2d8d8f9e7c91f9ce61e68e12663d73"
+                "reference": "5afdd43cc76bdb18df37e729e32569afd8ce0055"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-http/zipball/e6d286e08d2d8d8f9e7c91f9ce61e68e12663d73",
-                "reference": "e6d286e08d2d8d8f9e7c91f9ce61e68e12663d73",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-http/zipball/5afdd43cc76bdb18df37e729e32569afd8ce0055",
+                "reference": "5afdd43cc76bdb18df37e729e32569afd8ce0055",
                 "shasum": ""
             },
             "require": {
@@ -1756,22 +1756,22 @@
             "description": "Concept HTTP extension — responses, URLs, route introspection",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-http/issues",
-                "source": "https://github.com/php-concept-extensions/extension-http/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-http/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-logger-monolog",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-logger-monolog.git",
-                "reference": "dd6343429c4db1054379070b8df308bb5a45c28c"
+                "reference": "64887977dd549a8c7763bc2dcbf503c652d39b60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-logger-monolog/zipball/dd6343429c4db1054379070b8df308bb5a45c28c",
-                "reference": "dd6343429c4db1054379070b8df308bb5a45c28c",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-logger-monolog/zipball/64887977dd549a8c7763bc2dcbf503c652d39b60",
+                "reference": "64887977dd549a8c7763bc2dcbf503c652d39b60",
                 "shasum": ""
             },
             "require": {
@@ -1797,22 +1797,22 @@
             "description": "Concept Logger extension — Monolog with explicit handlers and optional data masking",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-logger-monolog/issues",
-                "source": "https://github.com/php-concept-extensions/extension-logger-monolog/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-logger-monolog/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-path-manager",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-path-manager.git",
-                "reference": "c6067ce6be16d3f77047e505aa68fcaa5519db36"
+                "reference": "ffc3d33d8db8dbf4c6089331109a2b4e2ef328b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-path-manager/zipball/c6067ce6be16d3f77047e505aa68fcaa5519db36",
-                "reference": "c6067ce6be16d3f77047e505aa68fcaa5519db36",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-path-manager/zipball/ffc3d33d8db8dbf4c6089331109a2b4e2ef328b0",
+                "reference": "ffc3d33d8db8dbf4c6089331109a2b4e2ef328b0",
                 "shasum": ""
             },
             "require": {
@@ -1834,22 +1834,22 @@
             "description": "Concept PathManager extension — project root and named path map resolution",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-path-manager/issues",
-                "source": "https://github.com/php-concept-extensions/extension-path-manager/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-path-manager/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-session-symfony",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-session-symfony.git",
-                "reference": "62ef1e167973ebae923f1c4f1614be95627bc85d"
+                "reference": "3a22fbc42d29f1e72b8c6fcf5edd38ec183521e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-session-symfony/zipball/62ef1e167973ebae923f1c4f1614be95627bc85d",
-                "reference": "62ef1e167973ebae923f1c4f1614be95627bc85d",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-session-symfony/zipball/3a22fbc42d29f1e72b8c6fcf5edd38ec183521e5",
+                "reference": "3a22fbc42d29f1e72b8c6fcf5edd38ec183521e5",
                 "shasum": ""
             },
             "require": {
@@ -1873,13 +1873,13 @@
             "description": "Concept Session extension — session and flash bag",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-session-symfony/issues",
-                "source": "https://github.com/php-concept-extensions/extension-session-symfony/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-session-symfony/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-support",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-support.git",
@@ -1907,22 +1907,22 @@
             "description": "Concept Extension Support — dependency-free runtime contract and factory helpers",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-support/issues",
-                "source": "https://github.com/php-concept-extensions/extension-support/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-support/tree/v1.1.1"
             },
             "time": "2026-10-12T15:32:02+00:00"
         },
         {
             "name": "php-concept/extension-validation-rakit",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-validation-rakit.git",
-                "reference": "b0c073eeca7bf5e86f981ca409b0be231e558ac3"
+                "reference": "591c47fc17e4928369737b374ec366c276eee22a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-validation-rakit/zipball/b0c073eeca7bf5e86f981ca409b0be231e558ac3",
-                "reference": "b0c073eeca7bf5e86f981ca409b0be231e558ac3",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-validation-rakit/zipball/591c47fc17e4928369737b374ec366c276eee22a",
+                "reference": "591c47fc17e4928369737b374ec366c276eee22a",
                 "shasum": ""
             },
             "require": {
@@ -1948,22 +1948,22 @@
             "description": "Concept Validation extension — magewirephp/validation and validation exceptions",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-validation-rakit/issues",
-                "source": "https://github.com/php-concept-extensions/extension-validation-rakit/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-validation-rakit/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-view",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-view.git",
-                "reference": "2909e4fbbe96f0d25a376562b9562d97742017b6"
+                "reference": "f80206ca3f694b86fa8ba311067f7d89268ce04a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-view/zipball/2909e4fbbe96f0d25a376562b9562d97742017b6",
-                "reference": "2909e4fbbe96f0d25a376562b9562d97742017b6",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-view/zipball/f80206ca3f694b86fa8ba311067f7d89268ce04a",
+                "reference": "f80206ca3f694b86fa8ba311067f7d89268ce04a",
                 "shasum": ""
             },
             "require": {
@@ -1989,22 +1989,22 @@
             "description": "Concept View extension — view contracts, response factory, registries",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-view/issues",
-                "source": "https://github.com/php-concept-extensions/extension-view/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-view/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-view-plates",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-view-plates.git",
-                "reference": "0c237d9ba37a9b11e571fda0e57162c623d4c281"
+                "reference": "b53dc1ebc3fb7736ca0c2869470bc557405b83f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-view-plates/zipball/0c237d9ba37a9b11e571fda0e57162c623d4c281",
-                "reference": "0c237d9ba37a9b11e571fda0e57162c623d4c281",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-view-plates/zipball/b53dc1ebc3fb7736ca0c2869470bc557405b83f5",
+                "reference": "b53dc1ebc3fb7736ca0c2869470bc557405b83f5",
                 "shasum": ""
             },
             "require": {
@@ -2029,22 +2029,22 @@
             "description": "Concept View Plates engine — PlatesView implementation",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-view-plates/issues",
-                "source": "https://github.com/php-concept-extensions/extension-view-plates/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-view-plates/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/extension-view-twig",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-extensions/extension-view-twig.git",
-                "reference": "9e15fee70bf50c8c82fc93ee9ef68a87897dc3cf"
+                "reference": "9ab6c8a26216463247465b01cd07a169a2a69eee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-extensions/extension-view-twig/zipball/9e15fee70bf50c8c82fc93ee9ef68a87897dc3cf",
-                "reference": "9e15fee70bf50c8c82fc93ee9ef68a87897dc3cf",
+                "url": "https://api.github.com/repos/php-concept-extensions/extension-view-twig/zipball/9ab6c8a26216463247465b01cd07a169a2a69eee",
+                "reference": "9ab6c8a26216463247465b01cd07a169a2a69eee",
                 "shasum": ""
             },
             "require": {
@@ -2070,9 +2070,9 @@
             "description": "Concept View Twig engine — TwigView implementation",
             "support": {
                 "issues": "https://github.com/php-concept-extensions/extension-view-twig/issues",
-                "source": "https://github.com/php-concept-extensions/extension-view-twig/tree/v1.1.0"
+                "source": "https://github.com/php-concept-extensions/extension-view-twig/tree/v1.1.1"
             },
-            "time": "2026-10-12T15:32:02+00:00"
+            "time": "2026-10-12T16:20:55+00:00"
         },
         {
             "name": "php-concept/stack",
