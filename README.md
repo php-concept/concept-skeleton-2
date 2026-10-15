@@ -32,7 +32,7 @@ Database, Components, and other product add-ons stay opt-in.
 ## About PHP Concept
 
 - **[Thin Core](https://github.com/php-concept/concept-core-2)** — container, routing, and dispatch. No View, Session, or Database inside the kernel.
-- **[ConceptStack](https://github.com/php-concept/concept-stack)** — fluent builders (`addHttp()`, `addView()`, …) that produce an ordered list of service providers.
+- **[ConceptStack](https://github.com/php-concept/concept-stack)** — fluent brick assembly (`add(new HttpBrick())`, …) that produces an ordered list of service providers.
 - **Extensions** — separate Composer packages. Paths, flags, and connections are constructor arguments from glue code — packages do not read a global config bag.
 - **PSR-first** — HTTP (PSR-7/15), Container (PSR-11), Logging (PSR-3), and friends stay interoperable.
 - **Visible wiring** — bootstrap shows exactly what lands in the container. No silent auto-discovery of half the ecosystem.

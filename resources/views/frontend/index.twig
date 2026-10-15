@@ -105,8 +105,8 @@
           <p class="arch-pkg"><code>php-concept/stack</code></p>
           <p>Fluent ConceptStack that turns chosen capabilities into an ordered provider list. An explicit assembly recipe — not a hidden global bootstrap.</p>
           <ul class="arch-list">
-            <li><i class="bi bi-check2"></i> addHttp() / addView() / …</li>
-            <li><i class="bi bi-check2"></i> set* config, with* opt-in</li>
+            <li><i class="bi bi-check2"></i> add(new HttpBrick()) / …</li>
+            <li><i class="bi bi-check2"></i> builder() set* / with*</li>
             <li><i class="bi bi-check2"></i> providers() → container</li>
           </ul>
         </div>
@@ -157,7 +157,7 @@
     <div class="row gy-4">
       {% set principles = [
         {icon: 'bi-ban', title: 'What it is not', items: ['Not a CMS', 'Not a forced full stack', 'No “enable everything” switch', 'No package-local config reading']},
-        {icon: 'bi-boxes', title: 'Stack naming', items: ['add* — enable a capability', 'set* — required / explicit config', 'with* — opt-in features', 'to* — sinks (e.g. logging)']},
+        {icon: 'bi-boxes', title: 'Stack naming', items: ['add(new XxxBrick()) — enable', 'builder()->set* — configure', 'with* — opt-in features', 'to* — sinks (e.g. logging)']},
         {icon: 'bi-plug', title: 'Extension wiring', items: ['One ServiceProvider entry', 'Contracts in Contracts/', 'Constructor params for config', 'Own types — no foreign service locator']},
         {icon: 'bi-lightning-charge', title: 'Thin Core', items: ['Container + Route + Dispatch', 'No transitive Extensions', 'Resolvers & interceptors as chains', 'Customize without patching RouteStrategy']}
       ] %}
@@ -182,7 +182,7 @@
 <section id="capabilities" class="portfolio section light-background">
   <div class="container section-title">
     <h2>Capabilities</h2>
-    <p>Bricks you enable with <code>addX()</code> — only when the product needs them.</p>
+    <p>Bricks you enable with <code>add(new XxxBrick())</code> — only when the product needs them.</p>
   </div>
   <div class="container">
     <div class="row gy-4">
@@ -225,10 +225,10 @@
         <div class="content">
           <h3>Explicit recipe, ordered providers</h3>
           <p class="lead">Stack does not read config. Every path, flag, and connection array is an argument on a brick method.</p>
-          <p><code>addX()</code> registers the capability immediately (no <code>end()</code>). After assembly, <code>$stack-&gt;providers()</code> returns the ordered list for League Container.</p>
+          <p><code>add(new XxxBrick())</code> registers the capability; configure via <code>builder()</code>. After assembly, <code>$stack-&gt;providers()</code> returns the ordered list for League Container.</p>
           <div class="stats-row stack-stats">
             <div class="stat-item">
-              <h3>add*</h3>
+              <h3>add()</h3>
               <p>Enable</p>
             </div>
             <div class="stat-item">
@@ -251,14 +251,17 @@
       <div class="col-lg-6">
         <pre class="code-panel" tabindex="0"><code>$stack = ConceptStack::create();
 
-$stack-&gt;addLogging()
+$stack-&gt;add(new LoggingBrick())
+    -&gt;builder()
     -&gt;toRotatingFile($logPath);
 
-$stack-&gt;addHttp()
+$stack-&gt;add(new HttpBrick())
+    -&gt;builder()
     -&gt;setRoutes([$routes])
     -&gt;withFormRequests();
 
-$stack-&gt;addView()
+$stack-&gt;add(new ViewBrick())
+    -&gt;builder()
     -&gt;withTwig()
     -&gt;setViewsPath($views);
 
