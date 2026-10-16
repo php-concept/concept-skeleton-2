@@ -2,7 +2,10 @@
 
 namespace Concept\App\Foundation;
 
+use Closure;
 use Concept\Extensions\Config\Contracts\ConfigInterface;
+use Concept\Extensions\PathManager\PathManager;
+use Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler;
 
 final class AppConfig
 {
@@ -54,5 +57,19 @@ final class AppConfig
             'use_only_cookies' => $this->config->getBool(ConfigKey::SESSION_OPTIONS_USE_ONLY_COOKIES, true),
             'use_strict_mode' => $this->config->getBool(ConfigKey::SESSION_OPTIONS_USE_STRICT_MODE, true),
         ];
+    }
+
+    /**
+     * @return Closure(): NativeFileSessionHandler
+     */
+    public function getSessionHandlerFactory(PathManager $pathManager): Closure
+    {
+        $sessionFilePath = $this->config->get(ConfigKey::SESSION_FILE_PATH);
+
+        return static function () use ($pathManager, $sessionFilePath): NativeFileSessionHandler {
+            return is_string($sessionFilePath) && $sessionFilePath !== ''
+                ? new NativeFileSessionHandler($pathManager->root($sessionFilePath))
+                : new NativeFileSessionHandler();
+        };
     }
 }

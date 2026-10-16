@@ -20,7 +20,6 @@ use Concept\Stack\Bricks\View\ViewBrick;
 use Concept\Stack\ConceptStack;
 use League\Container\Container;
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler;
 use Whoops\Handler\PrettyPageHandler;
 
 final class ApplicationStackBootstrap
@@ -56,15 +55,10 @@ final class ApplicationStackBootstrap
             ->setRules($config->getClassMap(ConfigKey::VALIDATOR_RULES, RuleInterface::class))
             ->setGlobalExcept($config->getStringList(ConfigKey::FORM_REQUEST_GLOBAL_EXCEPT));
 
-        $sessionFilePath = $config->get(ConfigKey::SESSION_FILE_PATH);
         $stack->add(new SessionBrick())
             ->builder()
             ->setOptions($app->sessionOptions())
-            ->setHandlerFactory(function () use ($pathManager, $sessionFilePath): NativeFileSessionHandler {
-                return is_string($sessionFilePath) && $sessionFilePath !== ''
-                    ? new NativeFileSessionHandler($pathManager->root($sessionFilePath))
-                    : new NativeFileSessionHandler();
-            })
+            ->setHandlerFactory($app->getSessionHandlerFactory($pathManager))
             ->withCsrf();
 
         $stack->add(new HttpBrick())
