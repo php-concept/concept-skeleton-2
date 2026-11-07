@@ -68,17 +68,20 @@ final class ApplicationStackBootstrap
             ->withFormRequests()
             ->withTypedRouteParameters();
 
-        $viewExtensions = $config->getClassStringList(ConfigKey::VIEW_EXTENSIONS);
         $viewCacheDir = $config->getString(ConfigKey::VIEW_CACHE_DIR, 'views');
+        $twig = new ViewTwigBrick();
+        $twig->builder()
+            ->setViewsPath($pathManager->get(PathName::VIEWS))
+            ->setCacheDir($pathManager->get(PathName::CACHE, $viewCacheDir))
+            ->setDebug($debug);
+
+        $viewExtensions = $config->getClassStringList(ConfigKey::VIEW_EXTENSIONS);
         $stack->add(new ViewBrick())
             ->builder()
             ->setPaths($pathManager->rootMap($config->getStringMap(ConfigKey::VIEW_PATHS)))
             ->setExtensions($viewExtensions)
             ->setRouteNamespaces($config->getStringMap(ConfigKey::VIEW_ROUTE_NAMESPACE))
-            ->withEngine(new ViewTwigBrick())
-            ->setViewsPath($pathManager->get(PathName::VIEWS))
-            ->setCacheDir($pathManager->get(PathName::CACHE, $viewCacheDir))
-            ->setDebug($debug);
+            ->withEngine($twig);
 
         $stack->add(new ConsoleBrick())
             ->builder()

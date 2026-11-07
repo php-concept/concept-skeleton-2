@@ -932,7 +932,7 @@
         },
         {
             "name": "php-concept/brick-casting-valinor",
-            "version": "v1.1.0",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-casting-valinor.git",
@@ -963,13 +963,13 @@
             "description": "Concept stack brick: casting (Valinor)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-casting-valinor/issues",
-                "source": "https://github.com/php-concept-bricks/brick-casting-valinor/tree/v1.1.0"
+                "source": "https://github.com/php-concept-bricks/brick-casting-valinor/tree/v1.1.3"
             },
             "time": "2026-11-06T10:57:05+00:00"
         },
         {
             "name": "php-concept/brick-console-symfony",
-            "version": "v1.1.0",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-console-symfony.git",
@@ -1001,13 +1001,13 @@
             "description": "Concept stack brick: console (Symfony)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-console-symfony/issues",
-                "source": "https://github.com/php-concept-bricks/brick-console-symfony/tree/v1.1.0"
+                "source": "https://github.com/php-concept-bricks/brick-console-symfony/tree/v1.1.3"
             },
             "time": "2026-11-06T10:57:05+00:00"
         },
         {
             "name": "php-concept/brick-data-masker",
-            "version": "v1.1.0",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-data-masker.git",
@@ -1038,13 +1038,13 @@
             "description": "Concept stack brick: data masker",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-data-masker/issues",
-                "source": "https://github.com/php-concept-bricks/brick-data-masker/tree/v1.1.0"
+                "source": "https://github.com/php-concept-bricks/brick-data-masker/tree/v1.1.3"
             },
             "time": "2026-11-06T10:57:05+00:00"
         },
         {
             "name": "php-concept/brick-error-handler-whoops",
-            "version": "v1.1.0",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-error-handler-whoops.git",
@@ -1085,13 +1085,13 @@
             "description": "Concept stack brick: error handling (Whoops)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-error-handler-whoops/issues",
-                "source": "https://github.com/php-concept-bricks/brick-error-handler-whoops/tree/v1.1.0"
+                "source": "https://github.com/php-concept-bricks/brick-error-handler-whoops/tree/v1.1.3"
             },
             "time": "2026-11-07T09:48:51+00:00"
         },
         {
             "name": "php-concept/brick-http",
-            "version": "v1.1.0",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-http.git",
@@ -1128,13 +1128,13 @@
             "description": "Concept stack brick: HTTP",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-http/issues",
-                "source": "https://github.com/php-concept-bricks/brick-http/tree/v1.1.0"
+                "source": "https://github.com/php-concept-bricks/brick-http/tree/v1.1.3"
             },
             "time": "2026-11-06T10:57:05+00:00"
         },
         {
             "name": "php-concept/brick-logger-monolog",
-            "version": "v1.1.0",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-logger-monolog.git",
@@ -1168,13 +1168,13 @@
             "description": "Concept stack brick: logging (Monolog)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-logger-monolog/issues",
-                "source": "https://github.com/php-concept-bricks/brick-logger-monolog/tree/v1.1.0"
+                "source": "https://github.com/php-concept-bricks/brick-logger-monolog/tree/v1.1.3"
             },
             "time": "2026-11-06T10:57:05+00:00"
         },
         {
             "name": "php-concept/brick-session-symfony",
-            "version": "v1.1.0",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-session-symfony.git",
@@ -1208,13 +1208,13 @@
             "description": "Concept stack brick: session (Symfony)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-session-symfony/issues",
-                "source": "https://github.com/php-concept-bricks/brick-session-symfony/tree/v1.1.0"
+                "source": "https://github.com/php-concept-bricks/brick-session-symfony/tree/v1.1.3"
             },
             "time": "2026-11-06T10:57:05+00:00"
         },
         {
             "name": "php-concept/brick-validation-rakit",
-            "version": "v1.1.0",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-validation-rakit.git",
@@ -1251,22 +1251,22 @@
             "description": "Concept stack brick: validation (Rakit)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-validation-rakit/issues",
-                "source": "https://github.com/php-concept-bricks/brick-validation-rakit/tree/v1.1.0"
+                "source": "https://github.com/php-concept-bricks/brick-validation-rakit/tree/v1.1.3"
             },
             "time": "2026-11-06T10:57:05+00:00"
         },
         {
             "name": "php-concept/brick-view",
-            "version": "v1.1.0",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-view.git",
-                "reference": "bb468b5c3f181848263490564b2b31a252b166fb"
+                "reference": "2122ef14ab9f3d658fe0f26e9f411bedb7488108"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-bricks/brick-view/zipball/bb468b5c3f181848263490564b2b31a252b166fb",
-                "reference": "bb468b5c3f181848263490564b2b31a252b166fb",
+                "url": "https://api.github.com/repos/php-concept-bricks/brick-view/zipball/2122ef14ab9f3d658fe0f26e9f411bedb7488108",
+                "reference": "2122ef14ab9f3d658fe0f26e9f411bedb7488108",
                 "shasum": ""
             },
             "require": {
@@ -1291,22 +1291,22 @@
             "description": "Concept stack brick: view registry (engine via brick-view-twig / brick-view-plates)",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-view/issues",
-                "source": "https://github.com/php-concept-bricks/brick-view/tree/v1.1.0"
+                "source": "https://github.com/php-concept-bricks/brick-view/tree/v1.1.3"
             },
-            "time": "2026-11-07T09:48:51+00:00"
+            "time": "2026-11-07T10:48:24+00:00"
         },
         {
             "name": "php-concept/brick-view-twig",
-            "version": "v1.1.0",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-concept-bricks/brick-view-twig.git",
-                "reference": "f2603972ca38630a599d8d04e7be1ee764711c9e"
+                "reference": "80a0d5b0e70f0aab76a033e2cd51b20f7aff1828"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-concept-bricks/brick-view-twig/zipball/f2603972ca38630a599d8d04e7be1ee764711c9e",
-                "reference": "f2603972ca38630a599d8d04e7be1ee764711c9e",
+                "url": "https://api.github.com/repos/php-concept-bricks/brick-view-twig/zipball/80a0d5b0e70f0aab76a033e2cd51b20f7aff1828",
+                "reference": "80a0d5b0e70f0aab76a033e2cd51b20f7aff1828",
                 "shasum": ""
             },
             "require": {
@@ -1329,9 +1329,9 @@
             "description": "Concept stack brick: Twig view engine",
             "support": {
                 "issues": "https://github.com/php-concept-bricks/brick-view-twig/issues",
-                "source": "https://github.com/php-concept-bricks/brick-view-twig/tree/v1.1.0"
+                "source": "https://github.com/php-concept-bricks/brick-view-twig/tree/v1.1.3"
             },
-            "time": "2026-11-07T09:48:51+00:00"
+            "time": "2026-11-07T10:48:24+00:00"
         },
         {
             "name": "php-concept/core-2",
