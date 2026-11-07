@@ -17,6 +17,7 @@ use Concept\Stack\Bricks\Logging\LoggingBrick;
 use Concept\Stack\Bricks\Session\SessionBrick;
 use Concept\Stack\Bricks\Validation\ValidationBrick;
 use Concept\Stack\Bricks\View\ViewBrick;
+use Concept\Stack\Bricks\ViewTwig\ViewTwigBrick;
 use Concept\Stack\ConceptStack;
 use League\Container\Container;
 use Symfony\Component\Console\Command\Command;
@@ -74,7 +75,7 @@ final class ApplicationStackBootstrap
             ->setPaths($pathManager->rootMap($config->getStringMap(ConfigKey::VIEW_PATHS)))
             ->setExtensions($viewExtensions)
             ->setRouteNamespaces($config->getStringMap(ConfigKey::VIEW_ROUTE_NAMESPACE))
-            ->withTwig()
+            ->withEngine(new ViewTwigBrick())
             ->setViewsPath($pathManager->get(PathName::VIEWS))
             ->setCacheDir($pathManager->get(PathName::CACHE, $viewCacheDir))
             ->setDebug($debug);

@@ -1,6 +1,6 @@
 {
     "name": "php-concept/skeleton-2",
-    "description": "FormSite-level starter for PHP Concept 2 — thin Core, opt-in Extensions, explicit ConceptStack",
+    "description": "FormSite-level starter for PHP Concept 2 \u2014 thin Core, opt-in Extensions, explicit ConceptStack",
     "type": "project",
     "license": "MIT",
     "require": {
@@ -18,7 +18,8 @@
         "php-concept/brick-http": "^1.0",
         "php-concept/brick-view": "^1.0",
         "php-concept/brick-console-symfony": "^1.0",
-        "php-concept/brick-error-handler-whoops": "^1.0"
+        "php-concept/brick-error-handler-whoops": "^1.0",
+        "php-concept/brick-view-twig": "^1.0"
     },
     "autoload": {
         "psr-4": {
@@ -44,7 +45,6 @@
         "publish-assets": [
             "mkdir -p public/vendor/bootstrap",
             "cp -R vendor/twbs/bootstrap/dist/. public/vendor/bootstrap/",
-
             "mkdir -p public/vendor/bootstrap-icons",
             "cp -R vendor/twbs/bootstrap-icons/font/. public/vendor/bootstrap-icons/"
         ],
